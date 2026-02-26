@@ -1,24 +1,24 @@
 # Talk & NameServer - Socket Programming
 
-Dette projekt er resultatet af en workshop i socket-programmering på 3. semester. Formålet var at opbygge en dybdegående forståelse for netværkskommunikation og distribuerede systemer gennem implementering af en chat-klient og en tilhørende navneservice.
+This project is the result of a socket programming workshop during the 3rd semester. The objective was to build a deep understanding of network communication and distributed systems through the implementation of a chat client and an associated name service.
 
-## Funktioner
-* **Multi-threaded Chat:** Implementering af en Talk-klient/server, der via trådhåndtering (`SenderTråd` og `RecieverTråd`) tillader asynkron beskedudveksling (full-duplex).
-* **TCP & UDP Implementering:** Erfaring med både forbindelsesorienteret (TCP) og forbindelsesløs (UDP) kommunikation.
-* **NameServer (Service Discovery):** En central navneservice, der holder styr på aktive klienters netværksidentifikation, så brugere kan finde hinanden via kaldenavne frem for IP-adresser.
-* **Client Handling:** Server-logik der kan håndtere flere klienter samtidigt via dedikerede `ClientHandlers`.
+## Features
+* **Multi-threaded Chat:** Implementation of a Talk client/server that, via thread management (`SenderThread` and `ReceiverThread`), allows asynchronous message exchange (full-duplex).
+* **TCP & UDP Implementation:** Experience with both connection-oriented (TCP) and connectionless (UDP) communication.
+* **NameServer (Service Discovery):** A central name service that tracks the network identification of active clients, allowing users to find each other via nicknames instead of IP addresses.
+* **Client Handling:** Server logic capable of handling multiple clients simultaneously via dedicated `ClientHandlers`.
 
-## Teknologier
-* **Sprog:** Java
-* **Netværk:** Java Sockets (TCP/UDP), IP/Port håndtering
+## Technologies
+* **Language:** Java
+* **Networking:** Java Sockets (TCP/UDP), IP/Port handling
 * **Concurrency:** Java Threads (Multi-threading)
-* **Værktøjer:** IntelliJ IDEA, Git
+* **Tools:** IntelliJ IDEA, Git
 
-## Struktur
-Projektet er opdelt i iterationer:
-1. **Version 1:** Simpel sekventiel TCP-chat.
-2. **Version 2:** Trådbaseret chat for samtidig afsendelse/modtagelse.
-3. **Version 3:** Integration af navneservice med både TCP og UDP understøttelse.
+## Structure
+The project is divided into iterations:
+1. **Version 1:** Simple sequential TCP chat.
+2. **Version 2:** Thread-based chat for simultaneous sending/receiving.
+3. **Version 3:** Integration of a name service with both TCP and UDP support.
 
-## Forfattere
-Karsten Kirkegaard, Rune Hyldgaard Jensen og Sidse Borch Mogensen
+## Authors
+Karsten Kirkegaard, Rune Hyldgaard Jensen, and Sidse Borch Mogensen
